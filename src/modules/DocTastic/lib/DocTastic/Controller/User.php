@@ -27,7 +27,7 @@ class DocTastic_Controller_User extends Zikula_AbstractController
             $docsDirectory = 'docs';
         } else {
             $docmoduleInfo = ModUtil::getInfoFromName($docmodule);
-            $baseUri = System::getBaseUri() . '/';
+           // $baseUri = System::getBaseUri() . '/';
             $relativePath = str_replace($baseUri, '', ModUtil::getBaseDir($docmoduleInfo['name']));
             $docsDirectory = $relativePath . '/' . 'docs';
         }
